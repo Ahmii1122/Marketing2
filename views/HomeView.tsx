@@ -65,7 +65,7 @@ const HomeView: React.FC = () => {
                          {[1,2,3].map(i => <div key={i} className="w-8 h-8 rounded-full border-2 border-slate-900 bg-slate-700 overflow-hidden"><img src={`https://i.pravatar.cc/100?u=${i}`} alt="avatar" /></div>)}
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold">Revolutionizing Growth for Velos Footwear</h3>
+                    <h3 className="text-2xl font-bold">Revolutionizing Growth for Noura</h3>
                   </div>
                 </div>
               </div>
