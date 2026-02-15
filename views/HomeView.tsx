@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { Search, MousePointer2, Share2, Ruler, ArrowRight, Play, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CalendlyButton from '../components/CalendlyButton';
 
 const HomeView: React.FC = () => {
   return (
@@ -14,9 +15,9 @@ const HomeView: React.FC = () => {
         </div>
         
         <div className="max-w-5xl mx-auto text-center">
-          <span className="inline-block py-1 px-4 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase rounded-full mb-6">
+          {/* <span className="inline-block py-1 px-4 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase rounded-full mb-6">
             Now Accepting Q4 Partners
-          </span>
+          </span> */}
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-tight tracking-tight">
             We Scale Brands Through <br />
             <span className="text-primary italic">Bold</span> Creativity
@@ -41,57 +42,6 @@ const HomeView: React.FC = () => {
           <div className="text-xl font-bold">STARK</div>
           <div className="text-xl font-bold">GOTHAM</div>
           <div className="text-xl font-bold">METRO</div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section className="py-24 px-6 bg-white/50 dark:bg-slate-900/30" id="services">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core Capabilities</h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              We provide end-to-end creative solutions designed to ignite your market vertical.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { 
-                icon: <Search className="w-6 h-6" />, 
-                title: "Search Optimization", 
-                desc: "Dominate search rankings and drive organic traffic with our data-driven SEO strategies."
-              },
-              { 
-                icon: <MousePointer2 className="w-6 h-6" />, 
-                title: "Paid Advertising", 
-                desc: "Maximize ROI with high-converting PPC campaigns across Google, Meta, and LinkedIn."
-              },
-              { 
-                icon: <Share2 className="w-6 h-6" />, 
-                title: "Social Growth", 
-                desc: "Build a thriving community and increase brand loyalty through strategic content creation."
-              },
-              { 
-                icon: <Ruler className="w-6 h-6" />, 
-                title: "Brand Strategy", 
-                desc: "Define your identity and positioning with a comprehensive brand framework."
-              },
-            ].map((service, idx) => (
-              <div key={idx} className="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700/50 hover:border-primary transition-all hover:shadow-xl flex flex-col">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all text-primary">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 mb-8 flex-grow leading-relaxed text-sm">
-                  {service.desc}
-                </p>
-                <Link to="/portfolio" className="inline-flex items-center font-bold text-sm text-primary group/link">
-                  Learn More 
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -180,9 +130,9 @@ const HomeView: React.FC = () => {
               <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all transform hover:scale-105">
                 Get Your Free Proposal
               </Link>
-              <button className="bg-primary-dark/30 border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">
+              <CalendlyButton className="bg-primary-dark/30 border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">
                 Book a Strategy Call
-              </button>
+              </CalendlyButton>
             </div>
           </div>
         </div>

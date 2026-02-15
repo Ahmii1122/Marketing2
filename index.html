@@ -7,6 +7,7 @@
     <title>SPRK Creative | Ignite Your Presence</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -31,9 +32,32 @@
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        body { 
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
         .dark .glass { background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(12px); }
+        /* Fix Calendly popup spacing */
+        .calendly-overlay {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .calendly-overlay .calendly-popup-content {
+            margin: 0 !important;
+        }
     </style>
 <script type="importmap">
 {

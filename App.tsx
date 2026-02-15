@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomeView from './views/HomeView';
+import ServicesView from './views/ServicesView';
 import PortfolioView from './views/PortfolioView';
 import ContactView from './views/ContactView';
 
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomeView />} />
+            <Route path="/services" element={<ServicesView />} />
             <Route path="/portfolio" element={<PortfolioView />} />
             <Route path="/contact" element={<ContactView />} />
           </Routes>

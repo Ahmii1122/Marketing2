@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TrendingUp, Mail, Phone, MapPin, Twitter, Linkedin, Globe } from 'lucide-react';
+import { TrendingUp, Mail, Phone, MapPin, Twitter, Linkedin, Globe, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
             A high-performance creative agency focused on delivering measurable results through data and bold design.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-primary transition-colors"><Twitter className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-primary transition-colors"><Globe className="w-5 h-5" /></a>
+           
+            <a target="_blank" href="https://www.linkedin.com/company/sprkcreative" className="hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
+            <a target="_blank" href="https://www.instagram.com/sprk_creative/" className="hover:text-primary transition-colors"><Instagram className="w-5 h-5" /></a>
           </div>
         </div>
 
