@@ -1,17 +1,14 @@
 
 import React from 'react';
 import { TrendingUp, Mail, Phone, MapPin, Twitter, Linkedin, Globe, Instagram } from 'lucide-react';
-
+import logo from '../assets/sprk.png';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-              <TrendingUp className="text-white w-4 h-4" />
-            </div>
-            <span className="font-bold text-lg text-white">SPRK</span>
+            <img src={logo} alt="SPRK Creative" width={200} height={100} />      
           </div>
           <p className="text-sm leading-relaxed">
             A high-performance creative agency focused on delivering measurable results through data and bold design.
