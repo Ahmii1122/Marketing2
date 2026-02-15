@@ -74,8 +74,7 @@ const ContactView: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-xl mb-2">Visit Us</h4>
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                    123 Agency Plaza, Suite 400<br />
-                    Creative District, San Francisco, CA 94105
+                    Plaza 23, Sunflower Commercial, Bahria Nasheman, Lahore, Pakistan
                   </p>
                 </div>
               </div>
@@ -87,8 +86,8 @@ const ContactView: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-xl mb-2">Email Us</h4>
                   <p className="text-slate-600 dark:text-slate-400">
-                    hello@zenithagency.com<br />
-                    quotes@zenithagency.com
+                    hello@sprkcreative.co<br />
+                    
                   </p>
                 </div>
               </div>
@@ -100,8 +99,8 @@ const ContactView: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-xl mb-2">Call Us</h4>
                   <p className="text-slate-600 dark:text-slate-400">
-                    +1 (555) 123-4567<br />
-                    Mon-Fri, 9am - 6pm PST
+                    +92 (320) 149-5253<br />
+                    
                   </p>
                 </div>
               </div>
@@ -111,13 +110,13 @@ const ContactView: React.FC = () => {
               <h4 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-6">Connect with us</h4>
               <div className="flex gap-4">
                 {[
-                  { icon: <Linkedin />, name: 'LinkedIn' },
-                  { icon: <Instagram />, name: 'Instagram' },
-                  { icon: <Twitter />, name: 'Twitter' }
+                  { icon: <Linkedin />, name: 'LinkedIn', link: 'https://www.linkedin.com/company/sprkcreative' },
+                  { icon: <Instagram />, name: 'Instagram', link: 'https://www.instagram.com/sprk_creative' },
+                  
                 ].map((social, i) => (
-                  <button key={i} className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all shadow-sm">
+                  <a target="_blank" href={social.link} key={i} className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all shadow-sm">
                     {social.icon}
-                  </button>
+                  </a>
                 ))}
               </div>
             </div>
