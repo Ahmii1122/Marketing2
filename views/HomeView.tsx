@@ -65,7 +65,7 @@ const HomeView: React.FC = () => {
                          {[1,2,3].map(i => <div key={i} className="w-8 h-8 rounded-full border-2 border-slate-900 bg-slate-700 overflow-hidden"><img src={`https://i.pravatar.cc/100?u=${i}`} alt="avatar" /></div>)}
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold">Revolutionizing Growth for Noura</h3>
+                    <h3 className="text-2xl font-bold">Revolutionizing Growth for <br /> Noura</h3>
                   </div>
                 </div>
               </div>
@@ -84,16 +84,16 @@ const HomeView: React.FC = () => {
             </div>
             
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold mb-6 leading-tight">Where Impact Meets Design for Scalable Growth</h2>
+              <h2 className="text-4xl font-bold mb-6 leading-tight">Turning Premium Aesthetics into Predictable Revenue</h2>
               <p className="text-slate-600 dark:text-slate-400 mb-10 leading-relaxed text-lg">
-                We don't just create pretty ads. We build growth engines. Our approach combines high-end creative storytelling with rigorous data analytics to ensure every dollar you spend is an investment.
+                Noura is a premium e-commerce fashion brand built to offer elevated eastern wear that looks luxurious — without the luxury price barrier.
               </p>
               
               <ul className="space-y-6 mb-12">
                 {[
-                  { title: "Performance-First Approach", text: "Everything we do is measured against your bottom-line KPIs." },
-                  { title: "Omni-Channel Strategy", text: "Scaling your brand across Meta, Google, TikTok, and beyond." },
-                  { title: "In-House Creative Studio", text: "Rapid prototyping and testing of high-impact visual assets." }
+                  { title: "Performance-First Approach", text: "We aligned campaigns directly with revenue KPIs — not likes or reach." },
+                  { title: "Omni-Channel Strategy", text: "Multiple ad angles, visuals, and hooks were tested rapidly to identify winning creatives." },
+                  { title: "In-House Creative Studio", text: "Product pages and user journeys were optimized to improve buying confidence and reduce drop-offs.." }
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-4">
                     <div className="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
