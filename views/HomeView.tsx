@@ -36,13 +36,13 @@ const HomeView: React.FC = () => {
         </div>
         
         {/* Logo Ticker Placeholder */}
-        <div className="mt-24 max-w-7xl mx-auto opacity-40 grayscale flex justify-center flex-wrap gap-12 md:gap-20">
+        {/* <div className="mt-24 max-w-7xl mx-auto opacity-40 grayscale flex justify-center flex-wrap gap-12 md:gap-20">
           <div className="text-xl font-bold">ALPHA</div>
           <div className="text-xl font-bold">OMEGA</div>
           <div className="text-xl font-bold">STARK</div>
           <div className="text-xl font-bold">GOTHAM</div>
           <div className="text-xl font-bold">METRO</div>
-        </div>
+        </div> */}
       </section>
 
       {/* Featured Success Story */}
