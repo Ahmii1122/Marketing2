@@ -91,9 +91,9 @@ const HomeView: React.FC = () => {
               
               <ul className="space-y-6 mb-12">
                 {[
-                  { title: "Performance-First Approach", text: "We aligned campaigns directly with revenue KPIs — not likes or reach." },
-                  { title: "Omni-Channel Strategy", text: "Multiple ad angles, visuals, and hooks were tested rapidly to identify winning creatives." },
-                  { title: "In-House Creative Studio", text: "Product pages and user journeys were optimized to improve buying confidence and reduce drop-offs.." }
+                  { title: "Performance-First Marketing", text: "We aligned campaigns directly with revenue KPIs — not likes or reach." },
+                  { title: "AI-Led Creative Testing", text: "Multiple ad angles, visuals, and hooks were tested rapidly to identify winning creatives." },
+                  { title: "Conversion-Focused Store Optimization", text: "Product pages and user journeys were optimized to improve buying confidence and reduce drop-offs.." }
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-4">
                     <div className="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
